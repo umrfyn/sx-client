@@ -1,7 +1,7 @@
 - leave a star for more fix & update
   - [Video](https://youtu.be/TU7zaK3Bw8c?si=C5U-Vv1TLMMnTZSX) 
   - [Config Generator](https://0nyx.wtf/tools)
-  - [Video how to host on bot-hosting](https://youtu.be/LJvx0948gNM?si=iQTVyM45NhAi5LeC)
+  - [bot-hosting](https://youtu.be/LJvx0948gNM?si=iQTVyM45NhAi5LeC)
 
 ---
 
