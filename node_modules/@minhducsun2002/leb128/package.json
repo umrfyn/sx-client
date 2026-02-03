@@ -1,0 +1,41 @@
+{
+  "name": "@minhducsun2002/leb128",
+  "version": "1.0.0",
+  "description": "LEB128 numbers, done right",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "jest --watch",
+    "docs": "typedoc --options typedoc.json",
+    "prepublishOnly": "npm run build && npm run docs"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhducsun2002/leb128"
+  },
+  "homepage": "https://github.com/minhducsun2002/leb128",
+  "bugs": {
+    "url": "https://github.com/minhducsun2002/leb128/issues"
+  },
+  "keywords": [
+    "leb128",
+    "leb"
+  ],
+  "author": "Minh Duc Vo <minhducsun2002@gmail.com>",
+  "license": "MIT",
+  "readme": "README.md",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.6",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typedoc": "^0.16.2",
+    "typescript": "^3.7.4"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "poly1305-js",
+  "version": "0.4.4",
+  "description": "Javascript implementations of Poly1305",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "cryptography",
+    "crypto",
+    "message authentication code",
+    "poly1305",
+    "one-time authentication"
+  ],
+  "repository": "https://github.com/paragonie/poly1305-js",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.51"
+  },
+  "author": "Paragon Initiative Enterprises",
+  "license": "ISC"
+}

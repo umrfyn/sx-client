@@ -5,12 +5,6 @@ INPUTS:
     activity:
       type: "LISTENING" # STREAMING, PLAYING, LISTENING, WATCHING, COMPETING
 
-  - token: "value 2"
-    customStatus: false  # / true 
-    voiceEnabled: false  # / true
-    activity:
-      type: "LISTENING" # STREAMING, PLAYING, LISTENING, WATCHING, COMPETING
-
 OPTIONS:
   location: "Bangkok" # default
   tz: "Asia/Bangkok" # default
