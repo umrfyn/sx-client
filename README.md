@@ -1,3 +1,10 @@
+<p align="center">
+    <img width="100" height="100" alt="7c78bc60bc59967f07afb18eed6f3971" src="https://i.postimg.cc/nr2sRDst/image.png" />
+  </a>
+</p>
+
+---
+
 - leave a star for more fix & update
   - [Video](https://youtu.be/TU7zaK3Bw8c?si=C5U-Vv1TLMMnTZSX) 
   - [Config Generator](https://0nyx.wtf/tools)
@@ -22,11 +29,5 @@
 <p align="center">
   <a href="https://star-history.com/#umrfyn/sx-client&Tips-Discord/sx-client&Date&theme=light">
     <img src="https://api.star-history.com/svg?repos=umrfyn/sx-client&type=Date&theme=light"">
-  </a>
-</p>
-
-
-<p align="center">
-    <img width="80" height="80" alt="7c78bc60bc59967f07afb18eed6f3971" src="https://github.com/user-attachments/assets/bcf38366-a01f-4698-8387-7ca4b1b09c15" />
   </a>
 </p>
