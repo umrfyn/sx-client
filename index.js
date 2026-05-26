@@ -142,7 +142,7 @@ class GetExternalImage {
     }
   }
 
-  async get(url1, url2) {
+  async get(url1, url2, retries = 3) {
     try {
       const { getExternal } = RichPresence;
 
@@ -153,7 +153,26 @@ class GetExternalImage {
         return { bigImage: null, smallImage: null };
       }
 
-      const images = await getExternal(this.client, "1438613688406769778", ...validUrls);
+      let images;
+      let lastError;
+      for (let attempt = 0; attempt < retries; attempt++) {
+        try {
+          images = await getExternal(this.client, "1438613688406769778", ...validUrls);
+          lastError = null;
+          break;
+        } catch (err) {
+          lastError = err;
+          if (attempt < retries - 1) {
+            await new Promise(r => setTimeout(r, 1000 * Math.pow(2, attempt)));
+          }
+        }
+      }
+
+      if (lastError) {
+        fuck_logger("warning", `[GetExternalImage] Failed after ${retries} attempts: ${lastError.message}`);
+        return { bigImage: null, smallImage: null };
+      }
+
       let finalUrl1 = null;
       let finalUrl2 = null;
 
@@ -170,7 +189,7 @@ class GetExternalImage {
         smallImage: finalUrl2,
       };
     } catch (error) {
-      console.error("[GetExternalImage Error]:", error);
+      fuck_logger("warning", `[GetExternalImage] ${error.message}`);
       return { bigImage: null, smallImage: null };
     }
   }
@@ -303,7 +322,7 @@ class Weather {
     try {
       const params = new URLSearchParams();
       params.append("key", "1e1a0f498dbf472cb3991045241608");
-      params.append("q", encodeURIComponent(this.tz));
+      params.append("q", this.tz);
       params.append("aqi", "yes");
 
       const response = await fetch(`https://api.weatherapi.com/v1/current.json?${params}`);
