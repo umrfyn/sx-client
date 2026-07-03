@@ -26,8 +26,10 @@
 
 ---
 
-<p align="center">
-  <a href="https://star-history.com/#umrfyn/sx-client&Tips-Discord/sx-client&Date&theme=light">
-    <img src="https://api.star-history.com/svg?repos=umrfyn/sx-client&type=Date&theme=light"">
-  </a>
-</p>
+<a href="https://www.star-history.com/?repos=umrfyn%2Fsx-client%2CTips-Discord%2Fsx-client%2Ctheme%3Dlight&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=umrfyn/sx-client%2CTips-Discord/sx-client%2Ctheme=light&type=date&theme=dark&legend=bottom-right" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=umrfyn/sx-client%2CTips-Discord/sx-client%2Ctheme=light&type=date&legend=bottom-right" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=umrfyn/sx-client%2CTips-Discord/sx-client%2Ctheme=light&type=date&legend=bottom-right" />
+ </picture>
+</a>
